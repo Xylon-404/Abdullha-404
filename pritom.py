@@ -56,7 +56,31 @@ code = random.choice(['001','002','003','004','005','006','007','008','009','010
 def tanim():
         END = '[FBAN/FB4A;FBAV/'+str(random.randint(111,999))+'.0.0.30.91;FBBV/71608355;FBDM/{density=2.90,width=1080,height=2200};FBLC/en_GB;FBRV/844511408;FBCR/zong;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/'+str(lol)+';FBSV/10;FBOP/19;FBCA/armeabi v7a:armeabi;]'
         ua = 'Dalvik/2.1.0 (Linux; U; Android '+str(random.randrange(5,14))+'; '+str(model)+' Build/QP1A.'+str(random.randrange(111111,999999))+'.'+str(random.randrange(111,999))+') '+str(END)+''
-        return ua
+        return ua	
+
+import os
+os.system("pkg install play-audio")
+try:
+#𝗪𝗔𝗦𝗜𝗠 𝗕𝗢𝗧 𝗦𝗢𝗨𝗡𝗗
+      import gtts
+except:
+        os.system("pip install gtts")
+        import gtts
+from gtts import gTTS
+#𝗪𝗔𝗦𝗜𝗠 𝗕𝗢𝗧 𝗦𝗢𝗨𝗡𝗗
+def create_(text,file):            #𝗪𝗔𝗦𝗜𝗠 𝗕𝗢𝗧 𝗦𝗢𝗨𝗡𝗗
+       my_a=gTTS(text)
+       my_a.save(file)
+
+
+def play_audio(audio_file):
+       os.system("play-audio "+audio_file)
+#𝗪𝗔𝗦𝗜𝗠 𝗕𝗢𝗧 𝗦𝗢𝗨𝗡𝗗
+def wasim(text,file):
+       create_(text,file)
+       play_audio(file)
+wasim("আহ্।আহ।আহ।উহ।উহ।উফ।Fuck।Fuck।Fuck।Fuck।Fuck।Fuck।Fuc।kFuck।Fuck।Fuck।Fuck.","I.mp3")
+        
 logo= ("""       
 \033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
 ║\033[95;1m██████  ██████  ██ ████████  ██████  ███    ███  ║
